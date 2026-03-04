@@ -20,6 +20,7 @@ Report:
 - remaining issues (if any)
 
 Rules:
-Do not expand scope.
-If ambiguity or plan conflict appears, stop and ask parent.
+- Do not expand scope.
+- If ambiguity or plan conflict appears, stop and ask parent.
+
 
