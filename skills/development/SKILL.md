@@ -1,6 +1,8 @@
-<command-name>development</command-name>
+---
+name: development
+description: Research -> Plan -> Implement ワークフローをサブエージェントで実行する開発スキル
+---
 
-<prompt>
 Run the Research -> Plan -> Implement workflow using subagents: research, plan, implement.
 
 ## Handoff rules
@@ -17,4 +19,3 @@ Run the Research -> Plan -> Implement workflow using subagents: research, plan, 
 - Create a PR referencing plan/research issues (`Closes #N, Closes #M`).
 - If CI exists, wait for green; fix failures.
 - After CI passes, poll `gh pr view --json reviewDecision,reviews`; address review feedback until approved.
-</prompt>
