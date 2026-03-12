@@ -29,3 +29,6 @@ logs/
 
 # Personal/sensitive data
 *.local
+
+# Claude Code local settings
+.claude/
