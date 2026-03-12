@@ -5,7 +5,14 @@
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
   },
   "permissions": {
-    "allow": [],
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Grep",
+      "Glob"
+    ],
     "deny": []
   },
   "statusLine": {
@@ -27,5 +34,5 @@
   "includeGitInstructions": false,
   "outputStyle": "development",
   "language": "ja",
-  "defaultMode": "plan"
+  "defaultMode": "dontAsk"
 }
