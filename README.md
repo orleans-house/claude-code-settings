@@ -14,22 +14,13 @@ cd claude-code-settings
 
 ## 設計方針
 
-Keep It Simple, Stupid.
-
 ### 何をどこに定義するか
 
-| 関心事 | 定義場所 | 注入方式 |
-|--------|---------|---------|
-| ワークフロー（research → plan → implement） | `~/.claude/output-styles/` | システムプロンプト |
-| Formatter・Linter の自動実行 | `settings.json` の `hooks` | ライフサイクルフック |
-| プロジェクト固有のルール | `.claude/rules/` | ユーザーコンテキスト（パス制限可） |
-| Lint・テストの実行手順 | `.claude/rules/` | ユーザーコンテキスト（パス制限可） |
-| 禁止行動 | `.claude/rules/` | ユーザーコンテキスト（パス制限可） |
-| アーキテクチャ上の制約 | `.claude/rules/` | ユーザーコンテキスト（パス制限可） |
-
-- **Output Style** はシステムプロンプトとして注入されるため、全セッションに一貫して適用される
-- **Hooks** はOS レベルで強制されるため、Claude の判断に依存しない
-- **Rules** はユーザーコンテキストとして注入される。`paths` フロントマターで対象ファイルを限定できる
+| 定義場所 | 注入方式 | 用途 |
+|---------|---------|------|
+| `~/.claude/output-styles/` | システムプロンプト | ワークフロー定義 |
+| `settings.json` の `hooks` | ライフサイクルフック | Formatter・Linter の自動実行 |
+| `.claude/rules/` | ユーザーコンテキスト（パス制限可） | プロジェクト固有のルール、Lint・テストの実行手順、禁止行動、アーキテクチャ上の制約 |
 
 ## ライセンス
 
