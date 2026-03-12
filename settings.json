@@ -22,7 +22,8 @@
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
-    "allowUnsandboxedCommands": false
+    "allowUnsandboxedCommands": false,
+    "excludeCommands": ["git", "gh"]
   },
   "hooks": {
     "SessionStart": [],
