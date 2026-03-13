@@ -18,4 +18,5 @@ Run the Research -> Plan -> Implement workflow using subagents: research, plan, 
 - Commit in logical units.
 - Create a PR referencing plan/research issues (`Closes #N, Closes #M`).
 - If CI exists, wait for green; fix failures.
+- After creating the PR, run the `code-review` skill to perform an automated review.
 - After CI passes, poll `gh pr view --json reviewDecision,reviews`; address review feedback until approved.
