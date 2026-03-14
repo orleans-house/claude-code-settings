@@ -35,6 +35,7 @@
     "excludeCommands": [
       "git",
       "gh",
+      "ssh",
       "codex",
       "docker",
       "pnpm",
