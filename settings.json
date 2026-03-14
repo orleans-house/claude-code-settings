@@ -39,6 +39,10 @@
       "docker",
       "pnpm",
       "terraform"
+    ],
+    "allowedHosts": [
+      "github.com",
+      "api.github.com"
     ]
   },
   "defaultMode": "dontAsk",
