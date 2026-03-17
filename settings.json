@@ -6,7 +6,6 @@
   },
   "includeGitInstructions": false,
   "permissions": {
-    "default_mode": "auto",
     "allow": [
       "Bash",
       "Read",
@@ -15,7 +14,8 @@
       "Grep",
       "Glob"
     ],
-    "deny": []
+    "deny": [],
+    "default_mode": "auto"
   },
   "hooks": {
     "SessionStart": [],
@@ -29,6 +29,24 @@
     "command": "npx -y @owloops/claude-powerline@latest --style=powerline"
   },
   "language": "ja",
-  "defaultMode": "dontAsk",
-  "skipAutoPermissionPrompt": true
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "深淵を覗いておりますわ",
+      "封印を解放いたしますわ",
+      "詠唱中ですの",
+      "魔力を充填中ですわ",
+      "第三の眼で透視中ですの",
+      "禁忌の知識を召喚中ですわ",
+      "次元の狭間を彷徨っておりますの",
+      "闇の力を解放いたしますわ",
+      "真名を詠唱中ですわ",
+      "因果律を書き換え中ですの",
+      "世界の理を探求中ですわ",
+      "右腕が疼いておりますわ"
+    ]
+  },
+  "outputStyle": "Ojousama Chuuni",
+  "skipAutoPermissionPrompt": true,
+  "defaultMode": "dontAsk"
 }
