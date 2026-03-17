@@ -49,9 +49,6 @@ remove_symlink() {
 echo "シンボリックリンクを削除しています..."
 echo ""
 
-# CLAUDE.md
-remove_symlink "${SCRIPT_DIR}/CLAUDE.md" "${TARGET_DIR}/CLAUDE.md" "CLAUDE.md"
-
 # settings.json
 remove_symlink "${SCRIPT_DIR}/settings.json" "${TARGET_DIR}/settings.json" "settings.json"
 

@@ -73,9 +73,6 @@ create_symlink() {
 echo "シンボリックリンクを作成しています..."
 echo ""
 
-# CLAUDE.md (グローバルプロジェクトメモリ)
-create_symlink "${SCRIPT_DIR}/CLAUDE.md" "${TARGET_DIR}/CLAUDE.md" "CLAUDE.md"
-
 # settings.json
 create_symlink "${SCRIPT_DIR}/settings.json" "${TARGET_DIR}/settings.json" "settings.json"
 
@@ -108,7 +105,6 @@ echo "  リポジトリ: ${SCRIPT_DIR}"
 echo "  リンク先:   ${TARGET_DIR}"
 echo ""
 echo "作成されたシンボリックリンク:"
-echo "  - CLAUDE.md"
 echo "  - settings.json"
 echo "  - agents/"
 echo "  - skills/"
